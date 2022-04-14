@@ -6,6 +6,13 @@ namespace Dev.To.Test
     public class ArticlesTest
     {
         [Fact]
+        public async Task GetListRelevantAsyncTest()
+        {
+            var articles = await ArticlesWithoutAuth.GetListRelevantAsync();
+            Assert.NotNull(articles);
+        }
+
+        [Fact]
         public async Task GetListByUserNameAsyncTest()
         {
             var articles = await ArticlesWithoutAuth.GetListByUserNameAsync( "alexandrefreire");
