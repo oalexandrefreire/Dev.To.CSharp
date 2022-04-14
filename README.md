@@ -4,19 +4,19 @@ get posts from dev.to
 
 ## Examples
 ```C#
-        public async Task GetListRelevantAsyncTest()
+        public async Task GetListRelevantAsync()
         {
             var articles = await ArticlesWithoutAuth.GetListRelevantAsync();
         }
 
         [Fact]
-        public async Task GetListByUserNameAsyncTest()
+        public async Task GetListByUserNameAsync()
         {
             var articles = await ArticlesWithoutAuth.GetListByUserNameAsync( "alexandrefreire");
         }
 
         [Fact]
-        public async Task GetByIdAsyncTest()
+        public async Task GetByIdAsync()
         {
             var article = await ArticlesWithoutAuth.GetByIdAsync( 987969);
         }
