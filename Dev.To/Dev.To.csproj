@@ -2,12 +2,33 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
+    <Description>get posts from dev.to</Description>
+    <Copyright>Alexandre Freire</Copyright>
+    <PackageProjectUrl>https://github.com/oalexandrefreire/Dev.To.CSharp</PackageProjectUrl>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/oalexandrefreire/Dev.To.CSharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>dev, dev.to, posts, posts-by-username, relevant</PackageTags>
+    <Company>Ale</Company>
+    <Authors>Alexandre Freire</Authors>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Flurl" Version="3.0.4" />
     <PackageReference Include="Flurl.Http" Version="3.2.2" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
